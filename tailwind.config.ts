@@ -7,7 +7,10 @@ const config: Config = {
 		"./app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
-		extend: {
+      extend: {
+         fontFamily: {
+            inter: ["--font-inter"]
+         },
 			colors: {
 				"primary-blue": "#0634BF",
 				"secondary-blue": "#F2F7FF",

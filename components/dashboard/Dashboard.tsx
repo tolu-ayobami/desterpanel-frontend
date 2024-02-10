@@ -23,7 +23,7 @@ const Dashboard = () => {
 										alt=""
 										src="/home_panel_icons/email_icons/email.svg"
 									/>
-									<span className="text-[22px] text-black]">Email</span>
+									<span className="text-[18px] text-black]">Email</span>
 								</div>
 
 								{/* Links */}
@@ -36,7 +36,7 @@ const Dashboard = () => {
 												alt=""
 												src="/home_panel_icons/email_icons/email-accounts.svg"
 											/>
-											<span className="text-[22px] text-primary-blue">
+											<span className="text-[18px] text-primary-blue">
 												Email account
 											</span>
 										</Link>

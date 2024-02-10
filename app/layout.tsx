@@ -4,7 +4,7 @@ import "./globals.css";
 import Sidebar from "@/components/common/Sidebar";
 import Navbar from "@/components/common/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
 	title: {
@@ -61,7 +61,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={inter.className}>
 				<Navbar />
-				<div className="flex">
+				<div className="flex font-inter">
 					<Sidebar />
 					{children}
 				</div>

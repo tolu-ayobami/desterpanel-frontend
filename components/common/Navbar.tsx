@@ -1,9 +1,9 @@
-import Image from "next/image";
-import React from "react";
-import { Skeleton } from "../ui/skeleton";
+import React from 'react'
+import Image from 'next/image';
+import { Skeleton } from '../ui/skeleton';
 
 const Navbar = () => {
-	return (
+  return (
 		<div className="bg-white h-[70px] w-full flex justify-between items-center py-[20px] px-[40px]">
 			<Image
 				width={100}
@@ -20,6 +20,6 @@ const Navbar = () => {
 			</div>
 		</div>
 	);
-};
+}
 
-export default Navbar;
+export default Navbar

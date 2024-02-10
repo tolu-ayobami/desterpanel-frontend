@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Skeleton } from "../ui/skeleton";
 import SelectBox from "../common/SelectBox";
 import Link from "next/link";
 

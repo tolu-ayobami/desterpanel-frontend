@@ -7,11 +7,31 @@ const config: Config = {
 		"./app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
-		extend: {
-			backgroundImage: {
-				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-				"gradient-conic":
-					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      extend: {
+         fontFamily: {
+            inter: ["--font-inter"]
+         },
+			colors: {
+				"primary-blue": "#0634BF",
+				"secondary-blue": "#F2F7FF",
+				"primary-text": "#385D95",
+				black: "#000310",
+				gray: "#77808E",
+			},
+			backgroundColor: {
+            gray: "#77808E",
+            white: "#FFFFFF",
+            dashboard: "#F6F6F6",
+				navbar: "#929292",
+			},
+			dropShadow: {
+				sm: "0 14px 18px rgba(0, 0, 0, 0.8)",
+			},
+			borderRadius: {
+				20: "20px",
+			},
+			borderColor: {
+				gray: "#E4E9F1",
 			},
 		},
 	},

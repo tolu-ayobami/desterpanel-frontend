@@ -75,34 +75,11 @@
   }
 }
 
-.accordionitem{
-  border-bottom: none;
+@layer utilities {
+  .text-balance{
+    text-wrap: balance;
+  }
 }
 
-.accordionall{
-  border-radius: 15px;
-}
 
-.softacontent{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.scripts{
-  background-color:#E4E9F1;
-  padding: 7px;
-}
-
-.scriptcontent{
-  display: flex;
-  flex-direction: column;
-  gap:10px;
-}
-
-#footer{
-  flex-wrap: wrap;
-  text-wrap: wrap;
-}
 

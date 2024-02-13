@@ -8,8 +8,47 @@ import Link from "next/link";
 
 
 const Footer = () =>{
+
+
+	const link = [
+		{
+			id:"1",
+			test:"Home",
+			url:"/", 
+		
+		  },
+
+		  {
+			id:"2",
+			test:"Trademark",
+			url:"/Trademark", 
+		
+		  },
+
+		  {
+			id:"3",
+			test:"Privacy policy",
+			url:"/Privacy Policy", 
+		
+		  },
+
+		  {
+			id:"4",
+			test:"Documentation",
+			url:"/Documentation", 
+		
+		  },
+
+		  {
+			id:"5",
+			test:"Give Feedback",
+			url:"/Give feedback", 
+		
+		  },
+	]
+
     return(
-        <div id="footer" className="m-[auto] w-[81%] max-md:w-[90%] flex align-center justify-around max-md:flex-col gap-[20px]  mt-[50px]">
+        <div  className="m-[auto] flex-wrap text-wrap w-[81%] max-md:w-[90%] flex align-center justify-around max-md:flex-col gap-[20px]  mt-[50px]">
 
          <div className=" flex flex-col gap-[7px]">
 
@@ -26,11 +65,9 @@ const Footer = () =>{
 
 
 		<div className="text-blue-800  font-bold flex gap-[15px]  flex-wrap my-[auto]">
-			<Link href="/Home">Home</Link>
-			<Link href="/Trademark">Trademark</Link>
-			<Link href="/Privacy policy">Privacy policy</Link>
-			<Link href="/Documentation">Documentation</Link>
-			<Link href="/Trademark">Give Feedback</Link>
+			{link.map((link) =>{
+				return <Link href={link.url} key={link.id}>{link.test}</Link>
+			})}
 
 		</div>
 

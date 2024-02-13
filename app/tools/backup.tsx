@@ -19,11 +19,11 @@ import Image from "next/image";
     return(
         <div className="">
 
-           <div className="w-[48%] max-md:w-[90%]  shadow-md  border-[1px] m-[auto] mt-[20px] accordionall">
+           <div className="w-[48%] max-md:w-[90%]  m-[auto] ">
 	
-			<Accordion type="single" collapsible className="">
+			<Accordion type="single" collapsible className="shadow-md border-[1px]  mt-[20px]  rounded-[15px]">
 				
-        <AccordionItem value="item-1" className="accordionitem">
+        <AccordionItem value="item-1" className="border-b-0">
           <AccordionTrigger className="text-blue-800 px-[10px] "><div className="flex gap-[15px] align-center">
 			<Image src="../home_panel_icons/backup_admin_icons/backup-administration.svg" className="my-[auto]" alt="image" width={25} height={25} />
 		    <p className="text-black ">Backup Administration</p>

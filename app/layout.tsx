@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Sidebar from "@/components/common/Sidebar";
-import Navbar from "@/components/common/Navbar";
+import Header from "./component/header"
+import Footer from "./component/footer"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -50,6 +50,7 @@ export const metadata: Metadata = {
 		],
 	},
 	manifest: "/site.webmanifest",
+
 };
 
 export default function RootLayout({
@@ -57,15 +58,13 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-	return (
-		<html lang="en">
-			<body className={inter.className}>
-				<Navbar />
-				<div className="flex font-inter">
-					<Sidebar />
-					{children}
-				</div>
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body className={inter.className}>
+		<Header />
+		{children}
+		<Footer/>
+		</body>
+    </html>
+  );
 }

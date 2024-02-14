@@ -17,11 +17,11 @@ import Image from "next/image";
 const Backup = () => {
 	return (
 		<div className="">
-			<div className="w-[48%] max-md:w-[90%]  m-[auto] ">
+			<div className="w-[100%] max-md:w-[90%]  m-[auto] ">
 				<Accordion
 					type="single"
 					collapsible
-					className="shadow-md border-[1px]  mt-[20px]  rounded-[15px]"
+					className="shadow-md border-[1px] bg-white mb-[20px]  rounded-[15px]"
 				>
 					<AccordionItem value="item-1" className="border-b-0">
 						<AccordionTrigger className="text-blue-800 px-[10px] ">
@@ -33,7 +33,7 @@ const Backup = () => {
 									width={25}
 									height={25}
 								/>
-								<p className="text-black ">Backup Administration</p>
+								<p className="text-black text-[18px]">Backup Administration</p>
 							</div>
 						</AccordionTrigger>
 
@@ -53,7 +53,7 @@ const Backup = () => {
 												width={25}
 												height={25}
 											/>
-											<p className="text-blue-800 font-bold my-[auto]">
+											<p className="text-blue-800 text-[16px] font-bold my-[auto]">
 												{rev.test}
 											</p>
 										</div>

@@ -14,36 +14,36 @@ const Footer = () =>{
 		{
 			id:"1",
 			test:"Home",
-			url:"/", 
-		
+			url:"/",
+
 		  },
 
 		  {
 			id:"2",
 			test:"Trademark",
-			url:"/Trademark", 
-		
+			url:"/Trademark",
+
 		  },
 
 		  {
 			id:"3",
 			test:"Privacy policy",
-			url:"/Privacy Policy", 
-		
+			url:"/Privacy Policy",
+
 		  },
 
 		  {
 			id:"4",
 			test:"Documentation",
-			url:"/Documentation", 
-		
+			url:"/Documentation",
+
 		  },
 
 		  {
 			id:"5",
 			test:"Give Feedback",
-			url:"/Give feedback", 
-		
+			url:"/Give feedback",
+
 		  },
 	]
 

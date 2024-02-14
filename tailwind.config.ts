@@ -10,6 +10,7 @@ const config = {
 	],
 	prefix: "",
 	theme: {
+<<<<<<< HEAD
 		container: {
 			center: true,
 			padding: "2rem",
@@ -82,13 +83,39 @@ const config = {
 			},
 			borderColor: {
 				gray: "#E4E9F1",
+=======
+      extend: {
+         fontFamily: {
+            inter: ["--font-inter"]
+         },
+			colors: {
+				"primary-blue": "#0634BF",
+				"secondary-blue": "#F2F7FF",
+				"primary-text": "#385D95",
+				black: "#000310",
+				gray: "#77808E",
+			},
+			backgroundColor: {
+            gray: "#77808E",
+            white: "#FFFFFF",
+            dashboard: "#F6F6F6",
+				navbar: "#929292",
+>>>>>>> a2ddff61c6810b033268c5b5b317f238c9b4c1a4
 			},
 			dropShadow: {
 				sm: "0 14px 18px rgba(0, 0, 0, 0.8)",
 			},
+<<<<<<< HEAD
 			backgroundColor: {
 				dashboard: "#F6F6F6",
 				"primary-blue": "#0634BF",
+=======
+			borderRadius: {
+				20: "20px",
+			},
+			borderColor: {
+				gray: "#E4E9F1",
+>>>>>>> a2ddff61c6810b033268c5b5b317f238c9b4c1a4
 			},
 		},
 	},

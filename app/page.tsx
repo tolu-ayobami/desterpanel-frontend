@@ -5,6 +5,7 @@ import Sidebar from "@/components/common/Sidebar";
 import GeneralInfo from "@/components/dashboard/GeneralInfo";
 import Statistics from "@/components/dashboard/Statistics";
 
+import Dashboard from "@/components/dashboard/Dashboard";
 export default function Home() {
 	return (
 		<main className="mt-[86px] pr-10 flex gap-[50px] ">
@@ -24,5 +25,7 @@ export default function Home() {
 				</div>
 			</div>
 		</main>
+   return (
+      <Dashboard />
 	);
 }

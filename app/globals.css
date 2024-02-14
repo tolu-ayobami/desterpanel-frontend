@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+<<<<<<< HEAD
 
 @layer base {
   :root {
@@ -83,3 +84,5 @@
 
 
 
+=======
+>>>>>>> a2ddff61c6810b033268c5b5b317f238c9b4c1a4

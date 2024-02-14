@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+<<<<<<< HEAD
 import Header from "./component/header";
 import Footer from "./component/footer";
+=======
+import Sidebar from "@/components/common/Sidebar";
+import Navbar from "@/components/common/Navbar";
+>>>>>>> a2ddff61c6810b033268c5b5b317f238c9b4c1a4
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -59,10 +64,19 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+<<<<<<< HEAD
 			<body className={`${inter.variable} bg-dashboard font-inter`}>
 				<Header />
 				{children}
 				<Footer />
+=======
+			<body className={inter.className}>
+				<Navbar />
+				<div className="flex font-inter">
+					<Sidebar />
+					{children}
+				</div>
+>>>>>>> a2ddff61c6810b033268c5b5b317f238c9b4c1a4
 			</body>
 		</html>
 	);

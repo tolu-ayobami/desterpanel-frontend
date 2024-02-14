@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Image from "next/image";
 import SelectBox from "../common/SelectBox";
 import Link from "next/link";
@@ -83,6 +84,23 @@ const GeneralInfo = () => {
 					/>
 				</Link>
 			</div>
+=======
+import { Skeleton } from "../ui/skeleton";
+
+const GeneralInfo = () => {
+	const sidebarSkeletons = 4;
+	return (
+		<div className="w-[300px] rounded-20 p-8 bg-white flex flex-col gap-[40px] shadow-sm">
+			<span className="text-[18px] font-medium text-black">
+				General Information
+			</span>
+			{Array.from({ length: sidebarSkeletons }, (_, index) => (
+				<div key={index} className="grid gap-5">
+					<Skeleton className="h-7 w-[100px]" />
+					<Skeleton className="h-7 w-full" />
+				</div>
+			))}
+>>>>>>> a2ddff61c6810b033268c5b5b317f238c9b4c1a4
 		</div>
 	);
 };

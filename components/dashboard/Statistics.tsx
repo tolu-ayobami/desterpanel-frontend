@@ -1,12 +1,8 @@
-<<<<<<< HEAD
 import { memoryUsage } from "process";
-=======
->>>>>>> a2ddff61c6810b033268c5b5b317f238c9b4c1a4
 import { Skeleton } from "../ui/skeleton";
 
 const Statistics = () => {
 	const sidebarSkeletons = 4;
-<<<<<<< HEAD
 	const [
 		subDomains,
 		diskUsage,
@@ -179,17 +175,6 @@ const Statistics = () => {
 					<div className="text-[16px] text-gray ">{processes}</div>
 				</div>
 			</div>
-=======
-	return (
-		<div className="w-[300px] rounded-20 p-8 bg-white flex flex-col gap-[40px] shadow-sm">
-			<span className="text-[18px] font-medium text-black">Statistics</span>
-			{Array.from({ length: sidebarSkeletons }, (_, index) => (
-				<div key={index} className="grid gap-5">
-					<Skeleton className="h-7 w-[100px]" />
-					<Skeleton className="h-7 w-full" />
-				</div>
-			))}
->>>>>>> a2ddff61c6810b033268c5b5b317f238c9b4c1a4
 		</div>
 	);
 };

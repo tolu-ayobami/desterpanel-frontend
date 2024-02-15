@@ -1,5 +1,3 @@
-
-
 const review = [
     {
         id:"1",

@@ -1,5 +1,3 @@
-
-
 export const scripts = [
     {
         id:"1",

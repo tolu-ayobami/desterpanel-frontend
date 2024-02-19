@@ -13,7 +13,7 @@ import Image from "next/image";
 const Alltool = () => {
 	return (
 		<div className="">
-			<div className="w-[100%] max-md:w-[90%] m-[auto]">
+			<div className="w-[100%]">
 				{Object.keys(review).map((category) => {
 					const categories = review[category as keyof typeof review];
 					return (
@@ -33,7 +33,9 @@ const Alltool = () => {
 											width={25}
 											height={25}
 										/>
-										<p className="text-black text-[18px]">{category}</p>
+										<p className="text-black text-[16px] md:text-[18px]">
+											{category}
+										</p>
 									</div>
 								</AccordionTrigger>
 
@@ -53,7 +55,7 @@ const Alltool = () => {
 														width={25}
 														height={25}
 													/>
-													<p className="text-blue-800 font-bold my-[auto] text-[16px]">
+													<p className="text-blue-800 font-bold my-[auto] text-[14px] md:text-[16px]">
 														{tool.test}
 													</p>
 												</div>

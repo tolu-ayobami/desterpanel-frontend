@@ -5,7 +5,7 @@ const Sidebar = () => {
 	return (
 		<div
 			id="sidebar"
-			className="min-w-[279px] flex flex-col justify-between items-start bg-primary-blue max-h-[700px] p-[24px] pt-[51px]"
+			className="hidden lg:flex min-w-[279px] flex-col justify-between items-start bg-primary-blue max-h-[700px] p-[24px] pt-[51px]"
 		>
 			<div>
 				<span className="text-white text-[18px] font-bold uppercase">

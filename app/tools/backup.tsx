@@ -17,7 +17,7 @@ import Image from "next/image";
 const Backup = () => {
 	return (
 		<div className="">
-			<div className="w-[100%] max-md:w-[90%]  m-[auto] ">
+			<div className="w-[100%]">
 				<Accordion
 					type="single"
 					collapsible
@@ -33,13 +33,13 @@ const Backup = () => {
 									width={25}
 									height={25}
 								/>
-								<p className="text-black text-[18px]">Backup Administration</p>
+								<p className="text-black text-[16px] md:text-[18px]">Backup Administration</p>
 							</div>
 						</AccordionTrigger>
 
 						<Separator className="w-[100%]" />
 
-						<AccordionContent className="grid grid-cols-2 max-md:grid-cols-1 gap-[30px] px-[10px]  mt-[20px] w-[85%] ">
+						<AccordionContent className="grid grid-cols-2 max-md:grid-cols-1 gap-[30px] px-[10px] mt-[20px] w-[85%] ">
 							{review.map((rev, index) => {
 								return (
 									<Link href={rev.url} key={index}>
@@ -53,7 +53,7 @@ const Backup = () => {
 												width={25}
 												height={25}
 											/>
-											<p className="text-blue-800 text-[16px] font-bold my-[auto]">
+											<p className="text-blue-800 text-[14px] md:text-[16px] font-bold my-[auto]">
 												{rev.test}
 											</p>
 										</div>

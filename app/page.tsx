@@ -7,17 +7,20 @@ import Statistics from "@/components/dashboard/Statistics";
 
 export default function Home() {
 	return (
-		<main className="mt-[86px] pr-10 flex gap-[50px] ">
+		<main className="mt-[100px] lg:pr-10 flex gap-[50px] z-30">
 			<Sidebar />
-			<div className="pt-[50px] w-[100%]">
-				<h1 className="text-[30px] font-bold w-full mb-[20px]">Tools</h1>
-				<div className="flex w-[100%] gap-[50px]">
-					<section className="dashboard w-[70%]">
+
+			<div className="lg:pt-[50px] w-[100%] max-w-[640px] md:max-w-[900px] mx-auto px-4 rounded">
+				<h1 className="text-[26px] font-bold w-full mb-[10px] lg:mb-[20px]">
+					Tools
+				</h1>
+				<div className="flex flex-col md:flex-row justify-between w-[100%] gap-[50px] md:gap-[30px]">
+					<section className="dashboard md:w-[60%]">
 						<Alltool />
 						<Softaculous />
 						<Backup />
 					</section>
-					<section className="flex flex-col gap-[30px]">
+					<section className="flex flex-col gap-[30px] md:w-[40%] ">
 						<GeneralInfo />
 						<Statistics />
 					</section>

@@ -15,7 +15,7 @@ import Image from "next/image";
 const Softaculous = () => {
 	return (
 		<div className="">
-			<div className="max-w-[582px] m-[auto] ">
+			<div className="w-[100%] m-[auto] ">
 				<Accordion
 					type="single"
 					collapsible
@@ -31,7 +31,7 @@ const Softaculous = () => {
 									width={25}
 									height={25}
 								/>
-								<p className="text-black text-[18px] my-[auto]">
+								<p className="text-black text-[16px] lg:text-[18px] my-[auto]">
 									Softaculous Apps Installer
 								</p>
 							</div>
@@ -40,8 +40,33 @@ const Softaculous = () => {
 						<AccordionContent className="w-[100%]">
 							<div className="flex flex-col gap-[10px]">
 								<p className="p-[6px] bg-gray-200 font-bold">Scripts:</p>
-								<div className="flex justify-between align-center px-[10px] overflow-x-scroll w-[100%] gap-[50px] ">
+								<div className="flex justify-between align-center px-[10px] overflow-x-scroll w-[100%] gap-[50px] pb-3 ">
 									{scripts.map((rev) => {
+										return (
+											<Link href={rev.url} key={rev.id}>
+												<div className="flex flex-col align-center items-center gap-[10px] ">
+													<Image
+														src={rev.image}
+														alt={rev.test}
+														width={25}
+														height={25}
+													/>
+													<p className="text-blue-800 font-bold text-center text-[14px] my-[auto]">
+														{rev.test}
+													</p>
+												</div>
+											</Link>
+										);
+									})}
+								</div>
+							</div>
+                  </AccordionContent>
+
+						<AccordionContent className="w-[100%]">
+							<div className="flex flex-col gap-[10px]">
+								<p className="p-[6px] bg-gray-200 font-bold">Categories:</p>
+								<div className="flex justify-between align-center px-[10px] overflow-x-scroll w-[100%] gap-[50px] pb-3 ">
+									{categories.map((rev) => {
 										return (
 											<Link href={rev.url} key={rev.id}>
 												<div className="flex flex-col align-center items-center gap-[10px] ">
@@ -62,30 +87,6 @@ const Softaculous = () => {
 							</div>
 						</AccordionContent>
 
-						<AccordionContent className="w-[100%]">
-							<div className="flex flex-col gap-[10px]">
-								<p className="p-[6px] bg-gray-200 font-bold">Categories:</p>
-								<div className="flex justify-between align-center px-[10px] overflow-x-scroll w-[100%] gap-[50px] ">
-									{categories.map((rev) => {
-										return (
-											<Link href={rev.url} key={rev.id}>
-												<div className="flex flex-col align-center items-center gap-[10px] ">
-													<Image
-														src={rev.image}
-														alt={rev.test}
-														width={25}
-														height={25}
-													/>
-													<p className="text-blue-800 font-bold my-[auto] text-[14px] text-center text-wrap">
-														{rev.test}
-													</p>
-												</div>
-											</Link>
-										);
-									})}
-								</div>
-							</div>
-						</AccordionContent>
 					</AccordionItem>
 				</Accordion>
 			</div>

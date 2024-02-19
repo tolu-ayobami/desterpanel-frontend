@@ -5,11 +5,11 @@ import {
 	AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import "../globals.css";
+import "@/app/globals.css";
 
 import { Separator } from "@/components/ui/separator";
 
-import review from "../datas/backupdata";
+import review from "@/lib/data/backupdata";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -21,10 +21,10 @@ const Backup = () => {
 				<Accordion
 					type="single"
 					collapsible
-					className="shadow-md border-[1px] bg-white mb-[20px]  rounded-[15px]"
+					className="shadow-md border-[1px] bg-white mb-[20px] rounded-[15px]"
 				>
 					<AccordionItem value="item-1" className="border-b-0">
-						<AccordionTrigger className="text-blue-800 px-[10px] ">
+						<AccordionTrigger className="text-blue-800 px-[15px]">
 							<div className="flex gap-[15px] align-center">
 								<Image
 									src="../home_panel_icons/backup_admin_icons/backup-administration.svg"
@@ -33,13 +33,15 @@ const Backup = () => {
 									width={25}
 									height={25}
 								/>
-								<p className="text-black text-[16px] md:text-[18px]">Backup Administration</p>
+								<p className="text-black text-[16px] md:text-[18px]">
+									Backup Administration
+								</p>
 							</div>
 						</AccordionTrigger>
 
 						<Separator className="w-[100%]" />
 
-						<AccordionContent className="grid grid-cols-2 max-md:grid-cols-1 gap-[30px] px-[10px] mt-[20px] w-[85%] ">
+						<AccordionContent className="grid grid-cols-2 max-md:grid-cols-1 gap-[30px] px-[20px] mt-[20px] w-[85%] ">
 							{review.map((rev, index) => {
 								return (
 									<Link href={rev.url} key={index}>

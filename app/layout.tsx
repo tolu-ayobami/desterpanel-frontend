@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Header from "./component/header";
-import Footer from "./component/footer";
+import Navbar from "@/components/common/Navbar";
+import Footer from "@/components/common/Footer";
+import Sidebar from "@/components/common/Sidebar";
 
-const poppins = Poppins({ subsets: ["latin"], variable: "--font-poppins" , weight: ['400', '500', '600']});
+const poppins = Poppins({
+	subsets: ["latin"],
+	variable: "--font-poppins",
+	weight: ["400", "500", "600"],
+});
 
 export const metadata: Metadata = {
 	title: {
@@ -59,10 +64,17 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${poppins.variable} bg-dashboard font-poppins`}>
-				<Header />
-				{children}
-				<Footer />
+			<body
+				className={`${poppins.variable} bg-dashboard font-poppins overflow-x-hidden`}
+			>
+				<Navbar />
+				<div className="grid grid-flow-col ">
+					<Sidebar />
+					<section className="lg:ml-[279px] grid">
+						{children}
+						<Footer />
+					</section>
+				</div>
 			</body>
 		</html>
 	);

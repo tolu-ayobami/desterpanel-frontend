@@ -43,7 +43,7 @@ const Statistics = () => {
 		"0 / 100 (0%)",
 	];
 	return (
-		<div className="w-[100%] lg:w-[300px] h-max rounded-20 bg-white flex flex-col shadow-sm">
+		<div className="w-[100%] h-max rounded-20 bg-white flex flex-col shadow-sm">
 			<span className="text-[18px] font-medium text-black p-8 pb-0">
 				Statistics
 			</span>

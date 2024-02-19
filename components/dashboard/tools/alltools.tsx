@@ -1,4 +1,4 @@
-import { review } from "../datas/all";
+import { review } from "@/lib/data/all";
 import {
 	Accordion,
 	AccordionContent,
@@ -22,8 +22,9 @@ const Alltool = () => {
 							key={category}
 							collapsible
 							className="shadow-md border-[1px] bg-white  mb-[20px]  rounded-[15px]"
+							defaultValue={category}
 						>
-							<AccordionItem value="item-1" className="border-b-0">
+							<AccordionItem value={category} className="border-b-0">
 								<AccordionTrigger className="text-blue-800 px-[15px] ">
 									<div className="flex gap-[15px] align-center">
 										<Image
@@ -41,7 +42,7 @@ const Alltool = () => {
 
 								<Separator className="w-[100%]" />
 
-								<AccordionContent className="grid grid-cols-2 max-md:grid-cols-1  gap-[30px] p-[20px] w-[85%]">
+								<AccordionContent className="grid grid-cols-1 sm:grid-cols-2 gap-[30px] p-[20px] w-[85%]">
 									{categories.tools.map((tool, index) => {
 										return (
 											<Link href={tool.url} key={index}>

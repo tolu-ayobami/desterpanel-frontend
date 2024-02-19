@@ -5,9 +5,9 @@ import {
 	AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import "../globals.css";
+import "@/app/globals.css";
 
-import { scripts, categories } from "../datas/softaculousdata";
+import { scripts, categories } from "@/lib/data/softaculousdata";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -60,7 +60,7 @@ const Softaculous = () => {
 									})}
 								</div>
 							</div>
-                  </AccordionContent>
+						</AccordionContent>
 
 						<AccordionContent className="w-[100%]">
 							<div className="flex flex-col gap-[10px]">
@@ -86,7 +86,6 @@ const Softaculous = () => {
 								</div>
 							</div>
 						</AccordionContent>
-
 					</AccordionItem>
 				</Accordion>
 			</div>

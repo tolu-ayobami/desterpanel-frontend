@@ -17,7 +17,7 @@ const GeneralInfo = () => {
 		"197.211.58.54",
 	];
 	return (
-		<div className="w-[100%] lg:w-[300px] rounded-20 p-8 bg-white flex flex-col gap-[25px] h-max shadow-sm">
+		<div className="w-[100%] rounded-20 p-8 bg-white flex flex-col gap-[25px] h-max shadow-sm">
 			<span className="text-[18px] font-medium text-black">
 				General Information
 			</span>

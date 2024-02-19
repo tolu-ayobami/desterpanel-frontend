@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
-import Sidebar from "@/components/common/Sidebar";
 import Navbar from "@/components/common/Navbar";
+import Footer from "@/components/common/Footer";
+import Sidebar from "@/components/common/Sidebar";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const poppins = Poppins({
+	subsets: ["latin"],
+	variable: "--font-poppins",
+	weight: ["400", "500", "600"],
+});
 
 export const metadata: Metadata = {
 	title: {
@@ -59,11 +64,16 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
+			<body
+				className={`${poppins.variable} bg-dashboard font-poppins overflow-x-hidden`}
+			>
 				<Navbar />
-				<div className="flex font-inter">
+				<div className="grid grid-flow-col ">
 					<Sidebar />
-					{children}
+					<section className="lg:ml-[279px] grid">
+						{children}
+						<Footer />
+					</section>
 				</div>
 			</body>
 		</html>

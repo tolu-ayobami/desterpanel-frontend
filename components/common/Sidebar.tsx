@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 
@@ -5,7 +7,7 @@ const Sidebar = () => {
 	return (
 		<div
 			id="sidebar"
-			className="min-w-[279px] flex flex-col justify-between items-start bg-primary-blue max-h-[700px] p-[24px] pt-[51px]"
+			className="hidden lg:flex fixed h-screen w-[279px] flex-col justify-between items-start bg-primary-blue p-[24px] pt-[80px] md:pt-[120px]"
 		>
 			<div>
 				<span className="text-white text-[18px] font-bold uppercase">

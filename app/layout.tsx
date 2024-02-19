@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "./component/header";
 import Footer from "./component/footer";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const poppins = Poppins({ subsets: ["latin"], variable: "--font-poppins" , weight: ['400', '500', '600']});
 
 export const metadata: Metadata = {
 	title: {
@@ -59,7 +59,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${inter.variable} bg-dashboard font-inter`}>
+			<body className={`${poppins.variable} bg-dashboard font-poppins`}>
 				<Header />
 				{children}
 				<Footer />

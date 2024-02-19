@@ -23,7 +23,7 @@ const config = {
 		},
 		extend: {
 			fontFamily: {
-				inter: ["--font-inter"],
+				poppins: ["--font-poppins"],
 			},
 			colors: {
 				border: "hsl(var(--border))",

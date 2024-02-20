@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+<<<<<<< HEAD
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import Sidebar from "@/components/common/Sidebar";
+=======
+import Header from "./component/header";
+import Footer from "./component/footer";
+>>>>>>> 7e90dd404e8e54fb9fc93c49e2d270fbdc73f56c
 
 const poppins = Poppins({
 	subsets: ["latin"],
@@ -64,6 +69,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+<<<<<<< HEAD
 			<body
 				className={`${poppins.variable} bg-dashboard font-poppins overflow-x-hidden`}
 			>
@@ -75,6 +81,12 @@ export default function RootLayout({
 						<Footer />
 					</section>
 				</div>
+=======
+			<body className={`${inter.variable} bg-dashboard font-inter`}>
+				<Header />
+				{children}
+				<Footer />
+>>>>>>> 7e90dd404e8e54fb9fc93c49e2d270fbdc73f56c
 			</body>
 		</html>
 	);

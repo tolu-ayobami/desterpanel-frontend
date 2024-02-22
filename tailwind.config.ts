@@ -59,6 +59,8 @@ const config = {
 					DEFAULT: "hsl(var(--card))",
 					foreground: "hsl(var(--card-foreground))",
 				},
+            "accent-blue": "#0634BF",
+            "grey": "rgba(146, 146, 146, 1)"
 			},
 			borderRadius: {
 				lg: "var(--radius)",
@@ -84,7 +86,8 @@ const config = {
 				gray: "#E4E9F1",
 			},
 			dropShadow: {
-				sm: "0 14px 18px rgba(0, 0, 0, 0.8)",
+            sm: "0 14px 18px rgba(0, 0, 0, 0.8)",
+            'search-box': "5px 5px 11px 0px rgba(6, 50, 190, 0.62)"
 			},
 			backgroundColor: {
 				dashboard: "#F6F6F6",

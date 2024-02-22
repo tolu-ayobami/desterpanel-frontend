@@ -6,112 +6,112 @@ export const review = {
 			{
 				id: "1",
 				test: "Email Accounts",
-				url: "/Email Accounts",
+				url: "/email-accounts",
 				image: "../home_panel_icons/email_icons/email-accounts.svg",
 			},
 
 			{
 				id: "2",
 				test: "Forwarders",
-				url: "/Forwarders",
+				url: "/forwarders",
 				image: "../home_panel_icons/email_icons/forwarders.svg",
 			},
 
 			{
 				id: "3",
 				test: "Mailing List",
-				url: "/Mailing List",
+				url: "/mailing-list",
 				image: "../home_panel_icons/email_icons/mailing-lists.svg",
 			},
 
 			{
 				id: "4",
 				test: "Default Address",
-				url: "/Default Address",
+				url: "/default-address",
 				image: "../home_panel_icons/email_icons/default-address.svg",
 			},
 
 			{
 				id: "5",
 				test: "Email Routing",
-				url: "/Email Routing",
+				url: "/email-routing",
 				image: "../home_panel_icons/email_icons/email-routing.svg",
 			},
 
 			{
 				id: "6",
 				test: "Autoresponders",
-				url: "/Autoresponders",
+				url: "/autoresponders",
 				image: "../home_panel_icons/email_icons/autoresponder.svg",
 			},
 
 			{
 				id: "7",
 				test: "Email Deliverability",
-				url: "/Email Deliverability",
+				url: "/email-deliverability",
 				image: "../home_panel_icons/email_icons/email-deliverability.svg",
 			},
 
 			{
 				id: "8",
 				test: "Email Filters",
-				url: "/Email Filters",
+				url: "/email-filters",
 				image: "../home_panel_icons/email_icons/email-filters.svg",
 			},
 
 			{
 				id: "9",
 				test: "Track Delivery",
-				url: "/Track Delivery",
+				url: "/track-delivery",
 				image: "../home_panel_icons/email_icons/track-delivery.svg",
 			},
 
 			{
 				id: "10",
 				test: "Global Email Filters",
-				url: "/Global Email Filters",
+				url: "/global-email-filters",
 				image: "../home_panel_icons/email_icons/global-mail-filter.svg",
 			},
 
 			{
 				id: "11",
 				test: "Address Importer",
-				url: "/Address Importer",
+				url: "/address-importer",
 				image: "../home_panel_icons/email_icons/address-importer.svg",
 			},
 
 			{
 				id: "12",
 				test: "Email Marketing",
-				url: "/Email Marketing",
+				url: "/email-marketing",
 				image: "../home_panel_icons/email_icons/email-marketing.svg",
 			},
 
 			{
 				id: "13",
 				test: "Encryption",
-				url: "/Encryption",
+				url: "/encryption",
 				image: "../home_panel_icons/email_icons/encryption.svg",
 			},
 
 			{
 				id: "14",
 				test: "ASSP SPAM filter",
-				url: "/ASSP SPAM filter",
+				url: "/spam-filter",
 				image: "../home_panel_icons/email_icons/assp-spam-manager.svg",
 			},
 
 			{
 				id: "15",
 				test: "Email Disk Usage",
-				url: "/Email Disk Usage",
+				url: "/email-disk-usage",
 				image: "../home_panel_icons/email_icons/email-disk-usage.svg",
 			},
 
 			{
 				id: "16",
 				test: "Remote MX Wizard",
-				url: "/Remote MX Wizard",
+				url: "/remote-mx-wizard",
 				image: "../home_panel_icons/email_icons/remote-mx-wizard.svg",
 			},
 		],

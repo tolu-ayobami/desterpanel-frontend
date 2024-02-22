@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SelectBox from "../common/SelectBox";
+import SelectBox from "./SelectBox";
 import Link from "next/link";
 
 const GeneralInfo = () => {

@@ -70,7 +70,7 @@ export default function RootLayout({
 				<Navbar />
 				<div className="grid grid-flow-col ">
 					<Sidebar />
-					<section className="lg:ml-[279px] grid">
+					<section className="grid px-4 mt-[100px] lg:pt-[50px] lg:px-[50px] lg:ml-[279px] lg:mt-[85px] lg:mx-0 ">
 						{children}
 						<Footer />
 					</section>

@@ -1,4 +1,4 @@
-import NextBreadcrumb from "@/components/common/Breadcrumbs";
+import ListofEmailAccounts from "@/components/email_accounts/ListofEmailAccounts";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -52,7 +52,7 @@ const page = () => {
 				</div>
 			</div>
 
-			<div className="mt-5">
+			<div className="mt-5 flex flex-col gap-[20px] md:flex-row flex-wrap md:justify-between">
 				<div id="searchbox_and_filters">
 					<Input
 						placeholder="Search"
@@ -60,7 +60,7 @@ const page = () => {
 						className="sm:w-[400px] h-[41px] border border-accent-blue rounded-[14px] drop-shadow-search-box placeholder:text-grey placeholder:text-[16px]"
 					/>
 
-					<div className="mt-3">
+					<div className="email-filters mt-3">
 						<span className="font-bold text-[16px]">Filter:</span>
 
 						<div className="btn_group mt-3 flex flex-wrap gap-3">
@@ -79,43 +79,46 @@ const page = () => {
 						</div>
 					</div>
 				</div>
+
+				<div id="pagination" className="grid gap-[3px] h-fit">
+					<Pagination className="me-0 w-fit">
+						<PaginationContent>
+							<PaginationItem>
+								<PaginationPrevious href="#" />
+							</PaginationItem>
+
+							<PaginationItem>
+								<PaginationLink href="#">1</PaginationLink>
+							</PaginationItem>
+
+							<PaginationItem>
+								<PaginationLink href="#">2</PaginationLink>
+							</PaginationItem>
+
+							<PaginationItem>
+								<PaginationLink href="#">3</PaginationLink>
+							</PaginationItem>
+
+							<PaginationItem>
+								<PaginationEllipsis />
+							</PaginationItem>
+
+							<PaginationItem>
+								<PaginationNext href="#" />
+							</PaginationItem>
+						</PaginationContent>
+					</Pagination>
+
+					<div className="text-end px-[6px] text-grey">
+						<span>1</span>&nbsp; out of &nbsp;<span>2</span>
+					</div>
+            </div>
+
+            <div id="email-account-table" className="w-full">
+               <ListofEmailAccounts />
+            </div>
 			</div>
 
-			{/* <div id="pagination" className="grid gap-[8px]">
-				<Pagination>
-					<PaginationContent>
-						<PaginationItem>
-							<PaginationPrevious href="#" />
-						</PaginationItem>
-
-						<PaginationItem>
-							<PaginationLink href="#">1</PaginationLink>
-						</PaginationItem>
-
-						<PaginationItem>
-							<PaginationLink href="#">2</PaginationLink>
-						</PaginationItem>
-
-						<PaginationItem>
-							<PaginationLink href="#">3</PaginationLink>
-						</PaginationItem>
-
-						<PaginationItem>
-							<PaginationEllipsis />
-						</PaginationItem>
-
-						<PaginationItem>
-							<PaginationNext href="#" />
-						</PaginationItem>
-					</PaginationContent>
-				</Pagination>
-
-				<div className="text-end px-[6px] text-grey">
-					<span>1</span>&nbsp; out of &nbsp;<span>2</span>
-				</div>
-			</div> */}
-
-			<div id="email-account-table"></div>
 		</main>
 	);
 };

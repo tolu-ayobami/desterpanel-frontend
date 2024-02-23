@@ -60,6 +60,7 @@ const config = {
 					foreground: "hsl(var(--card-foreground))",
 				},
             "accent-blue": "#0634BF",
+            "light-blue": "rgba(61, 140, 197, 1)",
             "grey": "rgba(146, 146, 146, 1)"
 			},
 			borderRadius: {

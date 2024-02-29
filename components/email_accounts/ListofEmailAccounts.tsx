@@ -81,7 +81,184 @@ const ListofEmailAccounts = () => {
 						<span>183.45 KB</span>/<span>1 GB</span>/<span>0.02%</span>
 					</div>
 
-					<div className="flex gap-4 justify-end">
+					<div className="flex gap-4 justify-end ps-5">
+						<Button type="button" size="default" variant="emailAccountBtn">
+							<Image
+								src="/email_account_icons/external-link.svg"
+								width={10}
+								height={10}
+								alt=""
+							/>
+							Check Email
+						</Button>
+						<Button type="button" size="default" variant="emailAccountBtn">
+							<Image
+								src="/email_account_icons/manage.svg"
+								width={10}
+								height={10}
+								alt=""
+							/>
+							Manage
+						</Button>
+						<Button type="button" size="default" variant="emailAccountBtn">
+							<Image
+								src="/email_account_icons/connect-devices.svg"
+								width={10}
+								height={10}
+								alt=""
+							/>
+							Connect Devices
+						</Button>
+					</div>
+				</div>
+				<div className="flex gap-[30px] items-center py-3">
+					<div className="flex justify-between items-center gap-6">
+						<input type="checkbox" name="check" id="" />
+
+						<Image
+							src="/email_account_icons/chevron-right.svg"
+							width={10}
+							height={10}
+							alt=""
+							className="w-[10px] h-[10px]"
+						/>
+					</div>
+
+					<span>adekunle@adesther.com.ng</span>
+
+					<div className="flex gap-2 justify-center items-center">
+						<Image
+							src="/email_account_icons/green-tick.svg"
+							width={10}
+							height={10}
+							alt=""
+						/>
+						<span>Unrestricted</span>
+					</div>
+
+					<div className="flex gap-1 justify-center items-center">
+						<span>183.45 KB</span>/<span>1 GB</span>/<span>0.02%</span>
+					</div>
+
+					<div className="flex gap-4 justify-end ps-5">
+						<Button type="button" size="default" variant="emailAccountBtn">
+							<Image
+								src="/email_account_icons/external-link.svg"
+								width={10}
+								height={10}
+								alt=""
+							/>
+							Check Email
+						</Button>
+						<Button type="button" size="default" variant="emailAccountBtn">
+							<Image
+								src="/email_account_icons/manage.svg"
+								width={10}
+								height={10}
+								alt=""
+							/>
+							Manage
+						</Button>
+						<Button type="button" size="default" variant="emailAccountBtn">
+							<Image
+								src="/email_account_icons/connect-devices.svg"
+								width={10}
+								height={10}
+								alt=""
+							/>
+							Connect Devices
+						</Button>
+					</div>
+				</div>
+				<div className="flex gap-[30px] items-center py-3">
+					<div className="flex justify-between items-center gap-6">
+						<input type="checkbox" name="check" id="" />
+
+						<Image
+							src="/email_account_icons/chevron-right.svg"
+							width={10}
+							height={10}
+							alt=""
+							className="w-[10px] h-[10px]"
+						/>
+					</div>
+
+					<span>adekunle@adesther.com.ng</span>
+
+					<div className="flex gap-2 justify-center items-center">
+						<Image
+							src="/email_account_icons/green-tick.svg"
+							width={10}
+							height={10}
+							alt=""
+						/>
+						<span>Unrestricted</span>
+					</div>
+
+					<div className="flex gap-1 justify-center items-center">
+						<span>183.45 KB</span>/<span>1 GB</span>/<span>0.02%</span>
+					</div>
+
+					<div className="flex gap-4 justify-end ps-5">
+						<Button type="button" size="default" variant="emailAccountBtn">
+							<Image
+								src="/email_account_icons/external-link.svg"
+								width={10}
+								height={10}
+								alt=""
+							/>
+							Check Email
+						</Button>
+						<Button type="button" size="default" variant="emailAccountBtn">
+							<Image
+								src="/email_account_icons/manage.svg"
+								width={10}
+								height={10}
+								alt=""
+							/>
+							Manage
+						</Button>
+						<Button type="button" size="default" variant="emailAccountBtn">
+							<Image
+								src="/email_account_icons/connect-devices.svg"
+								width={10}
+								height={10}
+								alt=""
+							/>
+							Connect Devices
+						</Button>
+					</div>
+				</div>
+				<div className="flex gap-[30px] items-center py-3">
+					<div className="flex justify-between items-center gap-6">
+						<input type="checkbox" name="check" id="" />
+
+						<Image
+							src="/email_account_icons/chevron-right.svg"
+							width={10}
+							height={10}
+							alt=""
+							className="w-[10px] h-[10px]"
+						/>
+					</div>
+
+					<span>adekunle@adesther.com.ng</span>
+
+					<div className="flex gap-2 justify-center items-center">
+						<Image
+							src="/email_account_icons/green-tick.svg"
+							width={10}
+							height={10}
+							alt=""
+						/>
+						<span>Unrestricted</span>
+					</div>
+
+					<div className="flex gap-1 justify-center items-center">
+						<span>183.45 KB</span>/<span>1 GB</span>/<span>0.02%</span>
+					</div>
+
+					<div className="flex gap-4 justify-end ps-5">
 						<Button type="button" size="default" variant="emailAccountBtn">
 							<Image
 								src="/email_account_icons/external-link.svg"

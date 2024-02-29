@@ -446,7 +446,7 @@ const calculatePasswordStrength = (password:any) =>{
 
 		<div className="border-red-300 border font-bold p-[20px] mt-[40px] flex flex-col gap-[20px] rounded-[15px] ">
 			<h1>DELETE EMAIL ACCOUNT</h1>
-			<p>Are you sure? When you delete an email account, we permanently delete all of the account's data. </p>
+			<p>Are you sure? When you delete an email account, we permanently delete all of the account data. </p>
 			
 			<Link href="/delete-email-account" className="p-[10px] rounded-lg border-blue-500 w-fit border text-white gap-[10px] flex align-center my-[auto]">
 			 <Image src="/email_account_icons/delete.svg" alt="image" className="my-[auto] " width={15} height={15} />

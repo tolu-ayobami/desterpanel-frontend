@@ -4,7 +4,7 @@ import ManageEmailContent from "../../../../components/email-manage-accounts-com
 import Sidecontent from "../../../../components/email-manage-accounts-components/sidecontent";
 import Manageaccount from "../../../../components/email-manage-accounts-components/manage-account";
 
-export const Manage = () => {
+ const ManageEmailAccount = () => {
 
     return(
             
@@ -18,5 +18,6 @@ export const Manage = () => {
 
     );
 }
+export default ManageEmailAccount;
 
   

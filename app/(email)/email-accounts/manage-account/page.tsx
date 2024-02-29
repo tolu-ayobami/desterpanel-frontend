@@ -1,25 +1,19 @@
-import Image from "next/image";
 
-
-
-
+import ManageEmailContent from "../../../../components/email-manage-accounts-components/manage-email-content";
+import Sidecontent from "../../../../components/email-manage-accounts-components/sidecontent";
+import Manageaccount from "../../../../components/email-manage-accounts-components/manage-account";
 
 export const Manage = () => {
 
     return(
-        <div className="">
-            <div className="">
-
-                <div className="">
-                <h2>Email Accounts</h2>
-                <p><span className="text-blue-700">List of Email Accounts/</span> Manage an Email Account</p>
-                </div>
-
-                <p>Use this page to manage your email accounts. Want to learn more? Read our <span>documentation? <Image src="/email_account_icons/create.svg"  alt="image"  width={25} height={25}/> </span></p>
-
-                </div>
-
-         </div>
+            
+		<div className="">
+		 <Manageaccount />
+		 <div className="flex align-center gap-[70px] max-md:flex-col">
+			<ManageEmailContent/>
+			<Sidecontent />
+		</div>
+		</div>    
 
     );
 }

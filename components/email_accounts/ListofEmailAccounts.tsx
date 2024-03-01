@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { Progress } from "../ui/progress";
 
 const ListofEmailAccounts = () => {
 	return (
@@ -32,7 +33,7 @@ const ListofEmailAccounts = () => {
 				</div>
 
 				{/* body */}
-				<div className="flex flex-wrap gap-2 md:gap-[10px] items-center p-1 py-3 overflow-hidden border-b border-b-grey md:border-0 lg:flex-nowrap">
+				<div className="flex flex-wrap gap-2 md:gap-[10px] items-start p-1 py-3 overflow-hidden border-b border-b-grey bg-slate-200 lg:flex-nowrap xl:items-center">
 					<div className="flex items-center w-full py-3 lg:py-0 lg:w-fit">
 						{/* checkbox and chevron */}
 						<div className="md:flex md:justify-between md:items-center md:gap-6 me-3 lg:me-0">
@@ -78,8 +79,8 @@ const ListofEmailAccounts = () => {
 						</Button>
 					</div>
 
-					<div className="ps-10 flex flex-wrap sm:justify-between gap-3 w-full lg:ps-0 lg:flex-nowrap">
-						<div className="flex flex-wrap justify-between sm:gap-[50px] gap-3 lg:flex-nowrap">
+					<div className="ps-10 flex flex-wrap sm:justify-between items-center gap-3 w-full lg:ps-0 ">
+						<div className="flex flex-wrap justify-between items-center sm:gap-[50px] gap-3 lg:flex-nowrap">
 							<div className="w-full sm:w-fit">
 								{/* restriction */}
 								<span className="font-bold lg:hidden">Restrictions</span>
@@ -106,11 +107,13 @@ const ListofEmailAccounts = () => {
 									<span>183.45 KB</span>&nbsp;/&nbsp;<span>1 GB</span>
 									&nbsp;/&nbsp;<span>0.02%</span>
 								</div>
+
+								<Progress value={1} />
 							</div>
 						</div>
 
 						{/* Buttons */}
-						<div className="flex flex-wrap gap-x-4 gap-y-3 justify-start lg:justify-end">
+						<div className="flex flex-wrap gap-x-4 gap-y-3 justify-start lg:justify-end ">
 							<Button type="button" size="default" variant="emailAccountBtn">
 								<Image
 									src="/email_account_icons/external-link.svg"
@@ -146,10 +149,14 @@ const ListofEmailAccounts = () => {
 									height={10}
 									alt=""
 								/>
-								<span className="hidden lg:block">Connect</span>
-								Devices
+								<span className="hidden lg:block">Connect</span>Devices
 							</Button>
-							<Button type="button" size="default" variant="emailAccountBtn">
+							<Button
+								type="button"
+								size="default"
+								variant="emailAccountBtn"
+								className="lg:hidden"
+							>
 								<Image
 									src="/email_account_icons/delete.svg"
 									width={10}

@@ -42,12 +42,12 @@ const page = () => {
 					className="flex bg-white w-full md:w-fit py-3 px-4 rounded-md md:rounded-lg"
 				>
 					<div className="flex justify-center items-center gap-3 px-4 border-r border-black w-1/2">
-						<span className="font-bold text-[28px] leading-none">4</span>
-						<span className="text-[14px]">Available</span>
+						<span className="font-bold text-[28px] leading-none">2</span>
+						<span className="text-[14px]">Used</span>
 					</div>
 					<div className="flex justify-center items-center gap-3 px-4 w-1/2">
-						<span className="font-bold text-[28px] leading-none">6</span>
-						<span className="text-[14px]">Used</span>
+						<span className="font-bold text-[28px] leading-none">10</span>
+						<span className="text-[14px]">Available</span>
 					</div>
 				</div>
 			</div>
@@ -115,8 +115,8 @@ const page = () => {
 				</div>
 
 				<div id="email-account-table" className="w-full">
-					<div className="flex justify-between mb-3">
-						<div className="flex gap-3 md:gap-5">
+					<div className="flex justify-between mb-5">
+						<div className="hidden lg:flex gap-3 md:gap-5">
 							<Button variant={"outline"} size={"icon"}>
 								<input type="checkbox" name="" id="" />
 							</Button>
@@ -135,7 +135,7 @@ const page = () => {
 							</Button>
 						</div>
 
-						<div className="flex gap-3 md:gap-5">
+						<div className="flex gap-3 md:gap-5 ms-auto me-0">
 							<Button
 								variant={"outline"}
 								size={"default"}
@@ -169,7 +169,7 @@ const page = () => {
 							</Button>
 						</div>
 					</div>
-					{/* <ListofEmailAccounts /> */}
+					<ListofEmailAccounts />
 				</div>
 			</div>
 		</main>

@@ -13,13 +13,6 @@ const config = {
 		container: {
 			center: true,
 			padding: "2rem",
-			screens: {
-				sm: "640px", // Small screens (e.g., smartphones)
-				md: "868px", // Medium screens (e.g., tablets)
-				lg: "1400px", // Large screens (e.g., laptops)
-				// xl: "1280px", // Extra-large screens (e.g., desktops)
-				"2xl": "1400px",
-			},
 		},
 		extend: {
 			fontFamily: {

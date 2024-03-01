@@ -12,11 +12,11 @@ const Navbar = () => {
 	return (
 		<div className="fixed top-0 z-[100] bg-white p-[22px] flex justify-between align-center shadow-md w-[100%]">
 			<Image
-				src="./d-panel-logo.svg"
+				src="/d-panel-logo.svg"
 				alt="image"
 				className="max-md:w-[80px]"
 				width={120}
-				height={120}
+				height={60}
 			/>
 
 			{show ? (

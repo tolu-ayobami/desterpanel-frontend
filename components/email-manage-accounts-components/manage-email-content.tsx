@@ -142,7 +142,7 @@ const calculatePasswordStrength = (password:any) =>{
     return(
 
         <div className="">
-        <div className="rounded-t-[15px] max-md:w-[98%]  max-md:m-[auto] max-md:mt-[30px]  bg-white mt-[20px] shadow-lg max-md:pb-[40px] pb-[70px] ">
+        <div className="rounded-t-[15px] max-md:w-[95%]  max-md:m-[auto] max-md:mt-[30px]  bg-white mt-[20px] shadow-lg max-md:pb-[40px] pb-[70px] ">
         <div className="flex max-md:flex-col max-md:gap-[5px] align-center justify-between p-[18px] ">
            <h1 className="font-bold my-[auto]">MANAGE AN EMAIL ADDRESS</h1>
            <div className="bg-[#EEEEEE] w-fit my-[auto] p-[5px] rounded-[10px] flex align-center gap-[5px] shadow-md ">
@@ -414,7 +414,7 @@ const calculatePasswordStrength = (password:any) =>{
         
             {/*UPDATE EMAIL   SECTION */}
 
-         <div className=" max-md:w-[98%] max-md:m-[auto]">
+         <div className=" max-md:w-[95%] max-md:m-[auto]">
 
 		 <div className="p-[17px] border-[3px] bg-[#EEEEEE] rounded-b-[15px]">
 

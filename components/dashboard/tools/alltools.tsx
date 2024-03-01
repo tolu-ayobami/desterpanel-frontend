@@ -17,7 +17,7 @@ const Alltool = () => {
 				{Object.keys(review).map((category) => {
 					const categories = review[category as keyof typeof review];
 					return (
-						<Accordion
+						<Accordion 
 							type="single"
 							key={category}
 							collapsible

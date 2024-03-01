@@ -37,7 +37,7 @@ const Footer = () => {
 		];
 
 		return (
-			<div className="p-5 bottom-0 flex-wrap text-wrap w-[100%] flex align-center justify-between max-md:flex-col gap-[20px] mt-[50px] max-w-[640px] md:max-w-[900px] lg:max-w-[100%] mx-auto lg:mx-0 px-4 lg:px-[50px]">
+			<div className="bottom-0 flex-wrap text-wrap w-[100%] flex align-center justify-between max-md:flex-col gap-[20px] mt-[50px] mb-[20px] max-w-[640px] md:max-w-[900px] lg:max-w-[100%] mx-auto lg:mx-0">
 				<div className="flex flex-col gap-[7px]">
 					<div className="flex align-center gap-[5px]">
 						<Image

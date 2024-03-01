@@ -7,7 +7,7 @@ const Sidebar = () => {
 	return (
 		<div
 			id="sidebar"
-			className="hidden lg:flex fixed h-screen w-[279px] flex-col justify-between items-start bg-primary-blue p-[24px] pt-[80px] md:pt-[120px]"
+			className="hidden lg:flex fixed h-screen w-[250px] flex-col justify-between items-start bg-primary-blue p-[24px] pt-[80px] md:pt-[120px]"
 		>
 			<div>
 				<span className="text-white text-[18px] font-bold uppercase">
@@ -23,7 +23,7 @@ const Sidebar = () => {
 								src="/home_panel_icons/tools.svg"
 							/>
 						</div>
-						<span className="text-white text-[18px] leading-[126%]">Tools</span>
+						<span className="text-white text-[16px] leading-[126%]">Tools</span>
 					</div>
 					<div className="flex items-center gap-[16px]">
 						<div className="bg-white flex justify-center items-center p-2 rounded-full">
@@ -34,7 +34,7 @@ const Sidebar = () => {
 								src="/home_panel_icons/wordpress-manager.svg"
 							/>
 						</div>
-						<span className="text-white text-[18px] leading-[126%]">
+						<span className="text-white text-[16px] leading-[126%]">
 							Wordpress Manager
 						</span>
 					</div>

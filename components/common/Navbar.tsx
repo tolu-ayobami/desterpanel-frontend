@@ -29,7 +29,7 @@ const Navbar = () => {
 								className="w-[100%]  text-right border-none outline-[0px] "
 							/>
 							<Image
-								src="./home_panel_icons/search-tools.svg"
+								src="/home_panel_icons/search-tools.svg"
 								alt="image"
 								className="max-md:flex max-md:w-[18px]"
 								width={20}
@@ -48,7 +48,7 @@ const Navbar = () => {
 
 					<div className="flex align-center gap-[20px]">
 						<Image
-							src="./home_panel_icons/refresh.svg"
+							src="/home_panel_icons/refresh.svg"
 							alt="image"
 							className="cursor-pointer max-md:w-[18px]"
 							width={20}
@@ -57,7 +57,7 @@ const Navbar = () => {
 
 						<div className="flex gap-[10px] align-center">
 							<Image
-								src="./home_panel_icons/profile-icon.svg"
+								src="/home_panel_icons/profile-icon.svg"
 								alt="image"
 								className="max-md:w-[18px] my-[auto]"
 								width={20}
@@ -86,7 +86,7 @@ const Navbar = () => {
 								className="w-[100%] text-[13px]  text-right border-none outline-[0px] "
 							/>
 							<Image
-								src="./home_panel_icons/search-tools.svg"
+								src="/home_panel_icons/search-tools.svg"
 								alt="image"
 								className="max-md:flex max-md:w-[18px]"
 								width={20}

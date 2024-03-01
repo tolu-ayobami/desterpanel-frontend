@@ -14,8 +14,18 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
+
+
+
+
 const page = () => {
-	return (
+
+
+	 
+
+
+
+	return(
 		<main className="">
 			<h1 className="text-[26px] font-bold w-full">Email Account</h1>
 			<span className="py-3 text-grey lg:text-[14px]">
@@ -120,6 +130,7 @@ const page = () => {
 			</div>
 
 		</main>
+       
 	);
 };
 

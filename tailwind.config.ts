@@ -61,7 +61,9 @@ const config = {
 				},
             "accent-blue": "#0634BF",
             "light-blue": "rgba(61, 140, 197, 1)",
-            "grey": "rgba(146, 146, 146, 1)"
+            "grey": "rgba(146, 146, 146, 1)",
+            "button-text-grey": "rgba(98, 98, 98, 1)",
+            "button-bg-grey": "rgba(221, 221, 221, 1)"
 			},
 			borderRadius: {
 				lg: "var(--radius)",

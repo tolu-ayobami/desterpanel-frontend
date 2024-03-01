@@ -24,7 +24,7 @@ const buttonVariants = cva(
 				ghostFilterBtn:
 					"hover:bg-gray-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50",
 				emailAccountBtn:
-					"flex gap-2 justify-center items-center border border-light-blue rounded-[8px] text-light-blue",
+					"gap-2 justify-center items-center border border-light-blue rounded-[8px] text-light-blue",
 			},
 			size: {
 				default: "h-9 px-4 py-2",

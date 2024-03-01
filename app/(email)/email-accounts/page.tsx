@@ -14,18 +14,8 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
-
-
-
-
 const page = () => {
-
-
-	 
-
-
-
-	return(
+	return (
 		<main className="">
 			<h1 className="text-[26px] font-bold w-full">Email Account</h1>
 			<span className="py-3 text-grey lg:text-[14px]">
@@ -122,15 +112,67 @@ const page = () => {
 					<div className="text-end px-[6px] text-grey">
 						<span>1</span>&nbsp; out of &nbsp;<span>2</span>
 					</div>
-            </div>
+				</div>
 
-            <div id="email-account-table" className="w-full">
-               <ListofEmailAccounts />
-            </div>
+				<div id="email-account-table" className="w-full">
+					<div className="flex justify-between mb-3">
+						<div className="flex gap-3 md:gap-5">
+							<Button variant={"outline"} size={"icon"}>
+								<input type="checkbox" name="" id="" />
+							</Button>
+							<Button
+								variant={"outline"}
+								size={"default"}
+								className="gap-2 text-button-text-grey"
+							>
+								<Image
+									src="/email_account_icons/delete.svg"
+									width={12}
+									height={12}
+									alt=""
+								/>
+								Delete
+							</Button>
+						</div>
+
+						<div className="flex gap-3 md:gap-5">
+							<Button
+								variant={"outline"}
+								size={"default"}
+								className="gap-2 text-white bg-light-blue"
+							>
+								<Image
+									src="/email_account_icons/create.svg"
+									width={12}
+									height={12}
+									alt=""
+								/>
+								Create
+							</Button>
+							<Button
+								variant={"outline"}
+								size={"default"}
+								className="gap-2 text-white bg-button-bg-grey"
+							>
+								<Image
+									src="/email_account_icons/setting.svg"
+									width={12}
+									height={12}
+									alt=""
+								/>
+								<Image
+									src="/email_account_icons/black-dropdown-icon.svg"
+									width={12}
+									height={12}
+									alt=""
+								/>
+							</Button>
+						</div>
+					</div>
+					{/* <ListofEmailAccounts /> */}
+				</div>
 			</div>
-
 		</main>
-       
 	);
 };
 
